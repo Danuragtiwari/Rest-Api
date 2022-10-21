@@ -9,5 +9,7 @@
 # Examples:- 
 # Application(consumer)<---->Google Map API<---->Google Map(Provider)
 # Like you,waiter,chef.
-
+# How To Use API
+# Consumer (Get Token)-->API-->Application-->Databases.
+# Read Documentation
 
