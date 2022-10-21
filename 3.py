@@ -40,3 +40,7 @@
 
 # Request for Deleting Data,id=1 
 # Request:-DELETE:/api/students/1,Response:-{'id':1,'name':'anu'}
+
+
+# RestFul API:-
+# url:- http
