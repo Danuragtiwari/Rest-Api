@@ -39,3 +39,34 @@
 # city=models.CharField(max_length=100)
 
 # Run makemigrations and migrate the command
+# table or models abject we have to convert it to in json formate.
+# Complex Data type--(serialization)-->Python Native DataType--(Render into Json)-->Json Data
+
+# The process of converting complex data such as querysets and model instances to native python datatypes(Boolean,Numbers,Strings,Bytes(jpeg images),List,....) are called as Serialization in DRF.
+# Creating model instance stu
+# stu=Student.objects.get(id=1)
+# Converting model instannce stu to python Dict/Serializing Object
+# serializer=StudentSerializer(stu)
+# Similarly for Query Set
+# Creating Query Set
+# stu=Student.objects.all()
+# Converting Query set stu to List of python Dict/Serializing Query set
+# serializer=StudentSerializer(stu,any=True)
+# To get or print serializer data ,print(serializer.data)
+
+# JSONRenderer
+# This is used to render Serialized data into JSON which is understandable by Front End
+# Importing JSONRenderer
+# from rest_framework.renderers import JSONRenderer
+
+# Render the Data into Json
+# json_data=JSONRender().render(serializer.data)
+
+# JsonResponse()
+# JsonResponse(data,encoder=DjangoJSONEncoder,safe=True,json_dumps_params=None,**kwargs)
+# An HttpResponse subclass that helps to create a JSON-encoded response.It inherits most behaviour from its superclass with a couple differences.
+# its differences:-
+# it default content-type header is set to application/json
+# the first parameter,data,should be dict instance,if the safe parameter is set to False it can be any JSON-serializable object.
+# The encoder,which defaults to django.core.serializers.json.DjangoJSONEncoder,will be used to serialize the data.
+# The safe boolean parameter defaults to True,if it set to false,any object can be passed for serialization(otherwise only dict instances are allowed).If safe is True and a non-dict object is passed as the first argument,a TypeError will be raised.
