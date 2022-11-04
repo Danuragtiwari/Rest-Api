@@ -4,7 +4,7 @@
 # Example:- To use json package first we have to import it.
 # import json
 # python_data={'name':'slim','roll':1}
-# json_data=json.dumos(python_data)
+# json_data=json.dumps(python_data)
 # print(json_data)  #{"name":"slim","roll":1}
 
 # loads(data):-This is used to parse JSON string.
