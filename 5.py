@@ -14,7 +14,7 @@
 # parsed_data=json.loads(json_data)
 # print(parsed_data) #{'name':'sonam','id':1}
 
-# Serializers:-In django REST framework,serializers are responsible for converting complex data such as Querysets and model instance to native Python datatypes(called serialization) that can then be easily rendered into JSON,XML or orther content types which is understandable by frontend.
+# Serializers:-In django REST framework,serializers are responsible for converting complex data such as Querysets and model instance to native Python datatypes(called serialization) that can then be easily rendered into JSON,XML or other content types which is understandable by frontend.
 #It is also responsible for deserialization  which means it allows parsed data to be converted back into complex types,after first validating the incoming data.
 # serialization
 # Deserialization
@@ -24,7 +24,18 @@
 # How to Create Serializer Class
 # Create a separate seriealizers.py file to write all serializers 
 # from rest_framework import serializers
-# class 
-# 
-# 
-# 
+# class StudentSerializer(serializers.Serializer):  #class name(serializers.Serializer)
+#  name=serializers.CharField(max_length=100)
+# roll=serializers.IntegerField()
+# city=serializers.CharField(max_length=100)
+
+
+
+# Now make models.py
+# from django.db import models 
+# class Student(models.Model):
+# name=models.CharFiedl(max_length=100)
+# roll=models.IntegerField()
+# city=models.CharField(max_length=100)
+
+# Run makemigrations and migrate the command
