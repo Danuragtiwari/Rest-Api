@@ -19,8 +19,8 @@ class StudentSerializer(serializers.Serializer):
         return instance
         
         # field level validation
-        def validate_roll(self,value):
-            if value>=200:
-                raise serializers.validationError('Seat is full')
-            return value
+    def validate_roll(self,value):
+        if value>=200:
+            raise serializers.validationError('Seat is full')
+        return value
         
