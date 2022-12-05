@@ -7,3 +7,14 @@
 # create custompermissions.py
 #class MyPermission(BasePermission):
 #   def has_permission(self,request,view):
+
+# Permission:-
+# Third party packages:-
+# DRF-Access Policy
+# Composed Permissions 
+# REST Condition
+# DRY Rest Permissions 
+# Django Rest Framework Roles 
+# Django REST Framework API Key 
+# Django Rest Framework Role Filters 
+# Django Rest Framework PSQ
