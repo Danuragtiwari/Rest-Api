@@ -33,6 +33,13 @@
 # How To install:- pip install httpie
 
 # Use httpie
+# for -POST
+# http -f POST htttp://127.0.0.1:8000/studentapi/ name=xyz roll=75 city=jdvb 'Authorization:Token  iuyyt13t657865' 
+## for -PUT
+# http -f PUT htttp://127.0.0.1:8000/studentapi/<id>/s name=xyz roll=75 city=jdvb 'Authorization:Token  iuyyt13t657865' 
+# for -DELETE
+# http -DELETE htttp://127.0.0.1:8000/studentapi/<id>/ 'Authorization:Token  iuyyt13t657865' 
+# similarliy for other too.
 # for various methods like put,patch,get,post etc
 
 
