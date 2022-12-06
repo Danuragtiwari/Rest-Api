@@ -11,10 +11,10 @@
 # Generate Token:-
 # using Admin Application:-
 # Using django manage.py command:- python manage.py drf_create_token<username> ..this command will return APIToken for the given user or Creates a Token if doesn't exist for user.
-# By exposing an API endpoint
+# By exposing an API endpoint--3
 # Using Signals
 
-# How client can ask/create token :-
+# How client can ask/create token :- --3
 # When using tokenAuthentication,yu may want to provide a mechanism for clients to obtain a token given the username and password.
 # REST framework provides a built-in view to provide this behaviour.To use it,add the obtain_auth_token view to your URLconf:
 # from rest_framework.authtoken.views import obtain_auth_token
