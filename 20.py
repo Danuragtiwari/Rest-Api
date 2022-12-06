@@ -24,3 +24,15 @@
 # {'token':'12365yfsfsfaf'} in this form we will get
 
 # it also generates token if the token is not generated for the provided user.
+
+# Permission Classes:-Permission in Rest framework as defined as list of permission classes.# same discuss in previous file check it.
+
+# httpie:-
+# HTTPie is a command line HTTP client.Its goal is to make CLI interaction with web services as human-friendly as possible.It provides a simple http command that allows for sending arbitrary HTTP requests using a simple and natural syntax,and displays colorized output.HTTPie can be used for testing ,debugginh and generally interacting with HTTP servers.
+# syntax:- http [flags] [METHOD] URL [ITEM[ITEM]]
+# How To install:- pip install httpie
+
+# Use httpie
+# for various methods like put,patch,get,post etc
+
+
