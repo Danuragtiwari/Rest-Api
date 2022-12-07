@@ -1,0 +1,2 @@
+# Custom Authentication:- 
+# To implement a custom authentication scheme,subclass BaseAuthentication and override the authenticate(self,request) method.The method should return a two-tuple of (user,auth) if authentication succeeds or None otherwise.
